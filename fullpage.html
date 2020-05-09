@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+		  content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Presentation using fullpage.js</title>
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/fullpage.min.css" rel="stylesheet">
+	<style>
+		img {
+			display: block;
+			width: 100%;
+			height: auto;
+		}
+	</style>
+</head>
+<body>
+<section id="fullpage">
+	<section class="section"><img src="0.jpg" alt=""></section>
+	<section class="section"><img src="1.jpg" alt=""></section>
+	<section class="section"><img src="2.jpg" alt=""></section>
+	<section class="section">
+		<section class="slide"><img src="3a.jpg" alt=""></section>
+		<section class="slide"><img src="3b.jpg" alt=""></section>
+		<section class="slide"><img src="3c.jpg" alt=""></section>
+		<section class="slide"><img src="3d.jpg" alt=""></section>
+		<section class="slide"><img src="3e.jpg" alt=""></section>
+	</section>
+	<section class="section"><img src="4.jpg" alt=""></section>
+</section>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/fullpage.min.js"></script>
+<script>
+	new fullpage('#fullpage', {
+		scrollHorizontally: true,
+		slidesNavigation: true,
+		slidesNavPosition: 'bottom',
+		dragAndMove: true,
+		sectionSelector: '.section',
+		slideSelector: '.slide'
+	});
+</script>
+</body>
+</html>
